@@ -1,0 +1,20 @@
+
+
+.splide__slide:hover{
+    /* border: solid 5px red; */
+    cursor: pointer;
+}
+
+section{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+div.splide{
+    width:90%;
+}
+
+
+

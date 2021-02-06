@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider with Splide.js</title>
+
+
+    
+    <link rel=stylesheet href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'></link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Jura:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+    <link rel=stylesheet href='splide-core.min.css'></link>
+    <link rel=stylesheet href='splide-sea-green.min.css'></link>
+    <link rel=stylesheet href='style.css'></link>
+    <link rel=stylesheet href='style2.css'></link>
+</head>
+<body>
+<section>
+        <!-- splide_slide contains elements such as the image, this will be the one sized by the options of the slider -->
+        <!-- When you create an image slider, "cover" option is useful. All images will be converted to background-image of their parent elements, which means you don’t need to crop images by an image editor. -->
+
+
+        <div id="projects-btn-container">
+            <button class="p-btn active-btn">All</button>
+            <button class="p-btn" > Websites </button>
+            <button class="p-btn" > Animation </button>
+            <button class="p-btn" > Design </button>
+            <button class="p-btn" > Development </button>
+            <button class="p-btn"> 2D </button>
+            <button class="p-btn"> 3D </button>
+        </div>
+
+
+    <div class="splide" id="image-slider">
+        <div class="splide__slider"> <!-- relative -->
+            <div class="splide__track">
+                <div class='splide__list'>
+                    <div class='splide__slide project-block animation 2d hello'>
+                        <img src="img/project-1.JPG">
+                        <div class='project-overlay-block'>
+                            <div class='project-overlay-contents'>
+                                <h5> Project Title </h5>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet augue quis ipsum condimentum suscipit pulvinar sollicitudin odio. Quisque suscipit semper dui. Proin porta varius nulla quis efficitur. </p>
+                                <div class='project-tags-container'>
+                                    <span> tag1 </span>
+                                    <span> tag2 </span>
+                                    <span> tag3 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='splide__slide project-block animation 3d websites'>
+                        <img src="img/project-2.JPG">
+                    </div>
+                    <div class='splide__slide project-block development 2d websites'>
+                        <img src="img/project-3.JPG">
+                    </div>
+                    <div class='splide__slide project-block development 3d websites'>
+                        <img src="img/project-4.JPG">
+                    </div>
+                    <div class='splide__slide project-block design 2d'>
+                        <img src="img/project-5.JPG">
+                    </div>
+                    <div class='splide__slide project-block design development'>
+                        <img src="img/project-6.JPG">
+                    </div>
+                    <div class='splide__slide project-block 2d animation'>
+                        <img src="img/project-7.JPG"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--slider element-->
+        <div class="splide__progress">
+            <div class="splide__progress__bar">
+            </div>
+        </div>
+        <div class="splide__autoplay">
+            <button class="slider-btn splide__pause"><i class="fas fa-pause"></i></button>
+            <button class="slider-btn splide__play"><i class="fas fa-play"></i></button>
+        </div>
+    </div>
+    
+</section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src='slider.js'></script>
+
+
+</body>
+</html>

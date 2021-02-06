@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider with Splide.js</title>
+
+
+    
+    <link rel=stylesheet href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'></link>
+    <link rel=stylesheet href='splide-core.min.css'></link>
+    <link rel=stylesheet href='splide-sea-green.min.css'></link>
+    <link rel=stylesheet href='style.css'></link>
+</head>
+<body>
+<section>
+        <!-- splide_slide contains elements such as the image, this will be the one sized by the options of the slider -->
+        <!-- When you create an image slider, "cover" option is useful. All images will be converted to background-image of their parent elements, which means you don’t need to crop images by an image editor. -->
+
+    <div class="splide" id="image-slider">
+        <div class="splide__slider"> <!-- relative -->
+            <div class="splide__track">
+                <div class='splide__list'>
+                    <div class=splide__slide>
+                        <img src="img/project-1.JPG">
+                    </div>
+                    <div class=splide__slide>
+                        <img src="img/project-2.JPG">
+                    </div>
+                    <div class=splide__slide>
+                        <img src="img/project-3.JPG">
+                    </div>
+                    <div class=splide__slide>
+                        <img src="img/project-4.JPG">
+                    </div>
+                    <div class=splide__slide>
+                        <img src="img/project-5.JPG">
+                    </div>
+                    <div class=splide__slide>
+                        <img src="img/project-6.JPG">
+                    </div>
+                    <div class=splide__slide>
+                        <img src="img/project-7.JPG"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--slider element-->
+        <div class="splide__progress">
+            <div class="splide__progress__bar">
+            </div>
+        </div>
+        <div class="splide__autoplay">
+            <button class="slider-btn splide__play"><i class="fas fa-play"></i></button>
+            <button class="slider-btn splide__pause"><i class="fas fa-pause"></i></button>
+        </div>
+    </div>
+    
+</section>
+
+
+<!-- <div class='project-block'>
+    <img src="img/project-1.JPG" alt='Thumbnail' class='project-block-thumbnail'>
+        <div class='project-overlay-block'>
+            <div class='project-overlay-contents'>
+                <h5> The Title </h5>
+                <p>  Excerpt </p>
+                <div class='project-tags-container'>
+                    <span>Tag1</span>
+                    <span>Tag2</span>
+                </div>
+            </div>
+        </div>
+</div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src='slider.js'></script>
+
+
+</body>
+</html>
